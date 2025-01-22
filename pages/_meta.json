@@ -1,5 +1,10 @@
 {
   "index": "Introduction",
+  "another": "Tokenomics",
+  "advanced": "Disclaimer",
+  "about": {
+    "title": "About",
+    "type": "page"
   },
   "contact": {
     "title": "Contact ↗",
