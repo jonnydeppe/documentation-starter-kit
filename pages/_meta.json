@@ -1,3 +1,10 @@
 {
-
+  "index": "Introduction",
+  },
+  "contact": {
+    "title": "Contact ↗",
+    "type": "page",
+    "href": "https://twitter.com/danronchese",
+    "newWindow": true
+  }
 }
