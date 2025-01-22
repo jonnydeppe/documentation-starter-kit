@@ -4,12 +4,12 @@ import { DocsThemeConfig } from 'nextra-theme-docs'
 const config: DocsThemeConfig = {
   logo: <span>Lunul Foundation</span>,
   project: {
-    link: '#',
+    link: '',
   },
   chat: {
     link: 'https://t.me/lunulfoundation',
   },
-  docsRepositoryBase: '#',
+  docsRepositoryBase: '',
   footer: {
     text: 'Lunul Foundation',
   },
