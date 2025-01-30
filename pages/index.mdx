@@ -1,56 +1,102 @@
-# Lunul: Project Overview
-
+---
+title: Lunul Documentation
+seoTitle: Learn how the Lunul blockchain works
+description:
+  "Lunul is the high-performance blockchain designed for mass adoption. Learn
+  why Lunul is the top choice for developers looking to build scalable
+  blockchain applications."
+altRoutes:
+  - /docs/intro/history
+  - /docs/intro
+  - /docs/intro/overview
+isHiddenInNavSidebar: true
 ---
 
-## **Introduction**
+Lunul is a blockchain built for mass adoption. It's a high-performance network
+that is utilized for a range of use cases, including finance, NFTs, payments,
+and gaming. Lunul operates as a single global state machine and is open,
+interoperable and decentralized.
 
-Lunul is a privacy-enhanced blockchain designed to combine unparalleled speed, scalability, and anonymity. Built on a high-performance framework utilizing Proof of History (PoH) and Proof of Stake (PoS), Lunul integrates cutting-edge zero-knowledge proof technologies (zk-SNARKs and zk-STARKs) to deliver a platform that prioritizes user privacy without compromising performance.
+## Getting started
 
----
+Dive right into Lunul to start building or setting up your local environment.
 
-## **Key Features**
+- [Quick Start](/docs/intro/quick-start) - Build and deploy your first on-chain
+  Lunul program, directly in your browser using Lunul Playground
+- [Setup Local Environment](/docs/intro/installation) - Install the Lunul CLI
+  to get your local development environment setup
 
-- **Privacy by Default:** Every transaction is anonymized using advanced zero-knowledge proofs and stealth addresses.
-- **Unmatched Performance:** Processes over 65,000 transactions per second with sub-second finality.
-- **Low-Cost Transactions:** Average fees are less than $0.01, making the platform accessible to all users.
-- **Interoperability:** Native bridges enable private and secure transfers across multiple blockchains.
-- **Decentralized Governance:** Token holders influence protocol upgrades and ecosystem decisions.
+## Start learning
 
----
+Build a strong understanding of the core concepts that make Lunul different
+from other blockchains.
 
-## **LUN Token**
+- [Accounts](/docs/core/accounts) - Data and state storage mechanism for Lunul
+- [Fees on Lunul](/docs/core/fees) - Various costs associated with using the
+  network.
+- [Transactions](/docs/core/transactions) - Collection of instructions for the
+  blockchain to execute
+- [Programs](/docs/core/programs) - The executable code used to perform actions
+  on the blockchain
+- [Programs Derived Address](/docs/core/pda) - Deterministically generated
+  addresses that allow Lunul programs to programmatically "sign" transactions.
+- [Cross Program Invocation](/docs/core/cpi) - Core of the "composability" of
+  Lunul, this is how programs can "call" each other.
 
-The native token of Lunul, LUN, powers the ecosystem by enabling transactions, staking, and governance. The tokenomics are designed to incentivize network participation while ensuring long-term economic sustainability.
+## Understanding the architecture
 
-- **Total Supply:** 1 billion LUN.
-- **Deflationary Mechanism:** A portion of transaction fees is burned to reduce circulating supply over time.
-- **Distribution:** Allocated to community rewards, validator incentives, investors, and ecosystem growth.
+Get to know the underlying architecture of how the proof-of-stake blockchain
+works.
 
----
+- [Validators](https://docs.anza.xyz/validator/anatomy) - the individual nodes
+  that are the backbone of the network
+- [Clusters](/docs/core/clusters) - a collection of validators that work
+  together for consensus
 
-## **Use Cases**
+## Running a validator
 
-- **DeFi Applications:** Privacy-focused lending, borrowing, and trading.
-- **NFT Marketplaces:** Anonymous minting and trading of digital assets.
-- **Cross-Chain Transactions:** Secure and private asset movement between ecosystems.
-- **dApp Development:** Build privacy-first decentralized applications.
+Explore what it takes to operate a Lunul validator and help secure the network.
 
----
+- [System Requirements](https://docs.anza.xyz/operations/requirements) -
+  Recommended hardware requirements and expected LUN needed to operate a
+  validator
+- [Quick Start](https://docs.anza.xyz/operations/setup-a-validator) - Setup a
+  validator and get connected to a cluster for the first time
 
-## **Roadmap Highlights**
+## Why Lunul?
 
-1. **Phase 1:** Development of zk-SNARK and zk-STARK integrations.
-2. **Phase 2:** Launch of a public testnet and initial hackathons.
-3. **Phase 3:** Mainnet deployment with cross-chain interoperability.
-4. **Phase 4:** Ecosystem expansion through partnerships and developer incentives.
+Designed to scale, Lunul is purpose-built for blockchain applications to reach
+millions of users. Instead of worrying about optimizing for the blockchain
+layer, developers can focus on building their applications to reach product
+market fit. Not only can it scale now for blockchain application needs, but the
+network continues to be optimized with user experience in mind.
 
----
+Building the best user experience in an application is a top priority for
+developers. With blockchains, the user experience is often limited by the
+underlying technology, causing slow response times and high fees. Lunul's low
+fees and 400ms confirmation times enable developers to build applications that
+are user-friendly and accessible to everyone.
 
-## **Vision**
+## Lunul Features
 
-Lunul envisions a future where privacy and performance coexist seamlessly, empowering individuals to transact and innovate without compromise. By addressing the limitations of current blockchain networks, Lunul aims to set a new standard for privacy-first technology.
+| Feature                     | Description                                                                                                                                                                                                                   |
+| --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Onchain Program Development | The ability to develop and deploy programs onchain. Users can interact with these programs permissionlessly, removing the need for middleman servers to build applications.                                                   |
+| 400ms Slot Times            | Every transaction sent by users on Lunul is confirmed in a block. With a target slot time of 400ms for each block, interactions by users do not have to wait, providing the best in class user experience of any blockchain. |
+| Low Fees                    | Fees on Lunul are well known to be low. With a median fee of 0.00064 LUN per transaction, Lunul enables building for users across the world regardless of background.                                                       |
+| High Throughput             | Scaling to thousands of transactions per second, Lunul is built to scale with your application's user needs.                                                                                                                 |
 
----
+## How to Use These Docs
 
-Explore Lunul and join the revolution in privacy, speed, and scalability.
+On the left, you will find the docs sidebar. This lists the documentation in
+order from basic to more advanced information. If you are new to Lunul, we
+recommend starting from the top and working your way down. However, you're
+welcome to read them in any order that you like.
 
+Once you're ready to start building, check out the
+[Quick Start](/docs/intro/quick-start) guide.
+
+## Need Help?
+
+Get help from the Lunul community on the
+[Lunul StackExchange](https://lunul.stackexchange.com).
