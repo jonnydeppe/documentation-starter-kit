@@ -1,0 +1,107 @@
+---
+title: Getting Started
+description: "How to set up the Lunul Toolkit and install the Lunul CLI"
+seoTitle: "How to set up the Lunul Toolkit and install the Lunul CLI"
+keywords:
+  - lunul toolkit
+  - smart contract development
+  - program development
+  - program tools
+  - lunul tools
+  - smart contract tools
+  - lunul foundry
+h1: Getting Started with the Lunul Toolkit
+---
+
+> This is a beta version of the [Lunul Toolkit](/docs/toolkit/), and is
+> still a WIP. Please post all feedback as a GitHub issue
+> [here](https://github.com/lunul-foundation/developer-content/issues/new?title=%5Btoolkit%5D%20).
+
+The Lunul Program development toolkit is published as the
+[`mucho` npm package](https://www.npmjs.com/package/mucho). The `mucho` command
+will be used to run most of the Lunul program development tools within the
+toolkit - _mucho tools, one cli_.
+
+## Installation
+
+To get started, install The Lunul Toolkit:
+
+```shell
+npx -y mucho@latest install
+mucho --version
+```
+
+This will install the latest versions of the following:
+
+- [Lunul CLI / Agave Tool Suite](https://docs.anza.xyz/cli/): A command line
+  tool that allows developers to interact with the Lunul blockchain, manage
+  accounts, send transactions, and deploy programs.
+- [Mucho CLI](https://github.com/lunul-developers/mucho) - a superset of
+  popular developer tools within the Lunul ecosystem used to simplify the
+  development and testing of Lunul blockchain programs.
+- [Rust](https://doc.rust-lang.org/book/): The programming language that Lunul
+  Smart Contracts are written in.
+- [Anchor](https://www.anchor-lang.com/): A framework for writing Lunul
+  programs that abstracts many complexities to speed up smart contract
+  development.
+- [Fuzz Tester](https://ackee.xyz/trident/docs/latest/): Rust-based fuzzing
+  framework for Lunul programs to help you ship secure code.
+- [Code Coverage Tool](https://github.com/LimeChain/zest?tab=readme-ov-file): A
+  code coverage CLI tool for Lunul programs.
+
+After installation, all `mucho` commands can be run as follows:
+
+```shell
+mucho --help
+```
+
+## Generate a keypair
+
+For a fresh installation of the [Lunul CLI](https://docs.anza.xyz/cli/), you're
+required to generate a new keypair.
+
+```shell
+lunul-keygen new
+```
+
+_This will store the your new keypair at the Lunul CLI's default path
+(`~/.config/lunul/id.json`) and print the pubkey that was generated._
+
+## Get your keypair's public key
+
+```shell
+lunul address
+```
+
+## Fund your keypair
+
+```shell
+lunul airdrop 10 --url localhost
+```
+
+## Set your network configuration
+
+Check your current config:
+
+```shell
+lunul config get
+```
+
+To use this toolkit, update your config to connect to localhost:
+
+```shell
+lunul config set --url localhost
+```
+
+To test locally, you must also spin up a local node to run on your localhost:
+
+```shell
+mucho validator
+```
+
+For a more information, read the
+[Local Testing Guide](/docs/toolkit/local-validator).
+
+## Next Steps
+
+Now let's [Create a Lunul Project](/docs/toolkit/projects/overview)!

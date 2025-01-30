@@ -1,0 +1,28 @@
+---
+title: Stake Programming
+---
+
+To maximize stake distribution, decentralization, and censorship resistance on
+the Lunul network, staking can be performed programmatically. The team and
+community have developed several on-chain and offchain programs to make stakes
+easier to manage.
+
+#### Stake-o-matic aka Auto-delegation Bots
+
+This offchain program manages a large population of validators staked by a
+central authority. The Lunul Foundation uses an auto-delegation bot to
+regularly delegate its stake to "non-delinquent" validators that meet specified
+performance requirements.
+
+#### Stake Pools
+
+This on-chain program pools together LUN to be staked by a manager, allowing LUN
+holders to stake and earn rewards without managing stakes. Users deposit LUN in
+exchange for LPL tokens (staking derivatives) that represent their ownership in
+the stake pool. The pool manager stakes deposited LUN according to their
+strategy, perhaps using a variant of an auto-delegation bot as described above.
+As stakes earn rewards, the pool and pool tokens grow proportionally in value.
+Finally, pool token holders can send LPL tokens back to the stake pool to redeem
+LUN, thereby participating in decentralization with much less work required.
+More information can be found at the
+[LPL stake pool documentation](https://spl.lunul.com/stake-pool).

@@ -1,0 +1,58 @@
+---
+title: Testing Basics
+seoTitle: "How to test Lunul programs"
+description: "How to run tests for Lunul program development"
+keywords:
+  - lunul development
+  - lunul testing
+  - test basics
+  - how to test programs
+h1: Lunul Testing Basics
+---
+
+> This is a beta version of the [Lunul Toolkit](/docs/toolkit/), and is
+> still a WIP. Please post all feedback as a GitHub issue
+> [here](https://github.com/lunul-foundation/developer-content/issues/new?title=%5Btoolkit%5D%20).
+
+## Installation
+
+Install the Lunul Toolkit and mucho CLI by running the following command:
+
+```shell
+npx -y mucho@latest install
+```
+
+## Build
+
+```shell
+mucho build
+```
+
+## Start Localnet
+
+```shell
+mucho validator
+```
+
+## Run Tests
+
+Anchor Programs:
+
+```shell
+anchor test
+```
+
+Native Programs:
+
+```shell
+cargo test
+```
+
+## Deploy
+
+```shell
+mucho deploy
+```
+
+For more information on local validator customization and commands, read the
+[Lunul Test Validator Guide](/developers/guides/getstarted/lunul-test-validator).

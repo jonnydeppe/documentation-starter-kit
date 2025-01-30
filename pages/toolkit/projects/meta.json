@@ -1,0 +1,12 @@
+{
+  "title": "Creating a Project",
+  "pages": [
+    "overview",
+    "anchor-init",
+    "lunul-program",
+    "web-app",
+    "mobile-app",
+    "existing-project",
+    "project-layout"
+  ]
+}
