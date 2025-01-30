@@ -1,5 +1,0 @@
-{
-  "title": "Lunul RPC Methods",
-  "pages": ["json-structures", "http", "websocket", "deprecated"],
-  "defaultOpen": true
-}
